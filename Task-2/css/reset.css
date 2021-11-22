@@ -5,12 +5,16 @@
   background-repeat: no-repeat;
   box-sizing: inherit;
 }
-
 html{
   font-size: 100%;
+  box-sizing: border-box;
+}
+main{
+  display: block;
 }
 img {
   max-width: 100%;
+  border-style: none;
 }
 ul li{
   list-style: none;

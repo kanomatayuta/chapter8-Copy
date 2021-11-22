@@ -40,18 +40,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.ingredients__list dt {
+.ingredients__list-term  {
   width: 85%;
   border-bottom: dotted 1px #ccc;
   padding: 6px 0;
 }
-.ingredients__list dd {
+.ingredients__list-explain  {
   width: 15%;
   border-bottom: dotted 1px #ccc;
   padding: 6px 0;
   text-align: right;
 }
-.procedure__list li {
+.procedure__list-item {
   border-bottom: dotted 1px #ccc;
   padding: 6px 0;
   margin-left: 20px;
@@ -62,7 +62,7 @@ body {
   text-align: center;
   margin-bottom: 80px;
 }
-.recipe__btn a {
+.recipe__btn-style {
   display: inline-block;
   border: solid 1px #2b2a27;
   font-size: 0.875rem;
@@ -81,18 +81,21 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
-.sns__list li{
+.sns__list-item{
   margin: 0 10px;
 }
 
 @media screen and (max-width: 834px){
-  #main .flex {
+  .flex {
     flex-direction: column;
   }
-  .mainVisual, .recipe{
+  .mainVisual{
     width: 100%;
   }
   .mainVisual-img {
     height: auto;
+  }
+  .flex .recipe{
+    width: 100%;
   }
 }
