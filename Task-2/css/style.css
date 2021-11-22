@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* 命名規則　BEM */
+
+/* main */
+.flex{
+  display: flex;
+}
+.mainVisual{
+  width: 50%;
+}
+.mainVisual-img{
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+/* レシピ */
+.recipe{
+  width: 50%;
+  padding: 25px 5% 0 5%;
+  box-sizing: border-box;
+}
+.recipe__name{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.recipe__cont-ttl {
+  border-bottom: solid 1px gray;
+  font-size: 1.5rem;
+  margin: 40px 0 15px 0;
+}
+
+/* リスト */
+.ingredients__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredients__list dt {
+  width: 80%;
+  border-bottom: dotted 1px gray;
+  padding: 5px 0;
+}
+.ingredients__list dd {
+  width: 20%;
+  border-bottom: dotted 1px gray;
+  padding: 5px 0;
+  text-align: right;
+}
+.procedure__list li {
+  border-bottom: dotted 1px gray;
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+/* ボタン */
+.recipe__btn {
+  text-align: center;
+  margin: 50px 0;
+}
+.recipe__btn a {
+  display: inline-block;
+  border: solid 1px black;
+  font-size: 1rem;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+/* footer */
+#footer{
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+}
+.sns__list{
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.sns__list li{
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px){
+  #main .flex {
+    flex-direction: column;
+  }
+  .mainVisual, .recipe{
+    width: 100%;
+  }
+  .mainVisual-img {
+    height: auto;
+  }
+}
