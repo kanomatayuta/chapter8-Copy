@@ -7,7 +7,7 @@ body{
 /* メイン画 */
 #mainvisual {
   width: 90vw;
-  margin: 5% auto 0 auto;
+  margin: 4% auto 0 auto;
 }
 .mainVisual-img{
   max-width: 100%;
@@ -18,14 +18,16 @@ body{
   display: flex;
   align-items: center;
   width: 90vw;
-  padding: 30px 0;
+  padding: 32px 0;
   margin: 0 auto 30px auto;
 }
 .site-ttl{
-  font-size: 0.8rem;
+  width: 110px;
   line-height: 1px;
   margin-right: 50px;
-  font-weight: normal;
+}
+.site-title a {
+  display: block;
 }
 /* ナビ */
 .nuv__list{
@@ -55,32 +57,35 @@ body{
 }
 .cont-tex{
   width: 50%;
-  margin: 0 3%;
+  margin: 0 7%;
 }
 .cont-ttl{
   font-weight: normal;
   font-size: 1.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 .cont-ttl__sub{
-  font-size: 0.8rem;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
-#Work{
-  flex-flow: row-reverse;
-}
+
 
 /* フッター */
 #footer{
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   padding: 20px 0;
+}
+.logo {
+  width: 110px;
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
+  .cont-ttl{
+    font-size: 1.25rem;
+  }
   #mainvisual{
     width: 100%;
     margin: 0px;
@@ -93,13 +98,16 @@ body{
   #header {
     width: 100%;
     padding: 20px 18px;
-}
-  .cont ,#Work{
+  }
+  #Work {
+    flex-direction: column-reverse;
+  }
+  .cont{
     flex-direction: column;
   }
   .cont-img{
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
   .cont-tex{
     width: 100%;
