@@ -5,7 +5,7 @@ body{
   font-family: 'Crimson Text', serif;
 }
 /* メイン画 */
-#mainvisual {
+#Mainvisual {
   width: 90vw;
   margin: 4% auto 0 auto;
 }
@@ -14,7 +14,7 @@ body{
   vertical-align: bottom;
 }
 /* ヘッター */
-#header{
+#Header{
   display: flex;
   align-items: center;
   width: 90vw;
@@ -26,7 +26,7 @@ body{
   line-height: 1px;
   margin-right: 50px;
 }
-.site-title a {
+.site-ttl-style {
   display: block;
 }
 /* ナビ */
@@ -71,7 +71,7 @@ body{
 
 
 /* フッター */
-#footer{
+#Footer{
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
@@ -86,7 +86,7 @@ body{
   .cont-ttl{
     font-size: 1.25rem;
   }
-  #mainvisual{
+  #Mainvisual{
     width: 100%;
     margin: 0px;
   }
@@ -95,7 +95,7 @@ body{
     height: 50vh;
     object-fit: cover;
   }
-  #header {
+  #Header {
     width: 100%;
     padding: 20px 18px;
   }
