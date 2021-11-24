@@ -1,0 +1,27 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing:border-box
+}
+
+html{
+  font-size: 100%;
+  display: block;
+}
+#main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border-style: none;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

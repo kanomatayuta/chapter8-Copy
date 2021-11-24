@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* 命名規則　BEM */
+body{
+  color: black;
+  font-family: 'Crimson Text', serif;
+}
+/* メイン画 */
+#mainvisual {
+  width: 90vw;
+  margin: 5% auto 0 auto;
+}
+.mainVisual-img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+/* ヘッター */
+#header{
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  padding: 30px 0;
+  margin: 0 auto 30px auto;
+}
+.site-ttl{
+  font-size: 0.8rem;
+  line-height: 1px;
+  margin-right: 50px;
+  font-weight: normal;
+}
+/* ナビ */
+.nuv__list{
+  display: flex;
+}
+.nuv__list-item{
+  font-size: 0.8rem;
+  margin-right: 30px;
+}
+.nuv__list-item:last-child{
+  margin-right: 0px;
+}
+
+/* メイン */
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.cont{
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.cont-img{
+  width: 50%;
+}
+.cont-tex{
+  width: 50%;
+  margin: 0 3%;
+}
+.cont-ttl{
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.cont-ttl__sub{
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#Work{
+  flex-flow: row-reverse;
+}
+
+/* フッター */
+#footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 20px 0;
+}
+
+
+@media screen and (max-width: 800px){
+  #mainvisual{
+    width: 100%;
+    margin: 0px;
+  }
+  .mainvisual-img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  #header {
+    width: 100%;
+    padding: 20px 18px;
+}
+  .cont ,#Work{
+    flex-direction: column;
+  }
+  .cont-img{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .cont-tex{
+    width: 100%;
+    padding: 0px;
+  }
+}
