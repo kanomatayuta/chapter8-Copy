@@ -21,12 +21,12 @@ body{
   padding: 32px 0;
   margin: 0 auto 30px auto;
 }
-.site-ttl{
+.site-title{
   width: 110px;
   line-height: 1px;
   margin-right: 50px;
 }
-.site-ttl-style {
+.site-title-style {
   display: block;
 }
 /* ナビ */
@@ -59,12 +59,12 @@ body{
   width: 50%;
   margin: 0 7%;
 }
-.cont-ttl{
+.cont-title{
   font-weight: normal;
   font-size: 1.5rem;
   margin-bottom: 4px;
 }
-.cont-ttl__sub{
+.cont-title__sub{
   display: inline-block;
   margin-bottom: 25px;
 }
@@ -83,7 +83,7 @@ body{
 
 
 @media screen and (max-width: 767px){
-  .cont-ttl{
+  .cont-title{
     font-size: 1.25rem;
   }
   #Mainvisual{
@@ -99,11 +99,11 @@ body{
     width: 100%;
     padding: 20px 18px;
   }
-  #Work {
-    flex-direction: column-reverse;
-  }
   .cont{
     flex-direction: column;
+  }
+  #Work.cont{
+    flex-direction: column-reverse;
   }
   .cont-img{
     width: 100%;
