@@ -4,29 +4,21 @@
 
 body {
   font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-size: 0.8rem;
-  color: black;
+  font-size: 0.875rem;
+  color: #2a2a2a;
 }
 a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 /* ヘッダー */
 #header{
-  width: 100%;
   height: 100vh;
-  background-image: url(https://placehold.jp/1200x500.png);
+  background-image: url(https://placehold.jp/1920x1269.png);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  margin-bottom: 80px;
   position: relative;
-  margin-bottom: 70px;
-}
-.logo-style{
-  color: white;
-  background-color: black;
-  font-size: 2.5rem;
-  padding: 2px 10px;
-  text-align: center;
 }
 .logo-position{
   position: absolute;
@@ -34,67 +26,65 @@ a:hover {
   right:30px;
 }
 
-/* メイン */
+/* メイン 共通*/
 .wrap{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
 }
-
+.sec-title{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+/* ボタン */
+.btn{
+  color: #2a2a2a;
+  border: solid 1px #2a2a2a;
+  display: inline-block;
+  font-size: 0.750rem;
+  padding: 14px 36px;
+  margin-top: 30px;
+}
+/* Magazine */
 #magazine{
   text-align: center;
-  margin-bottom: 70px;
-}
-.magazine--title{
-  font-size: 1.5rem;
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 }
 .magazine__cont{
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .magazine__cont-item{
   width: 49%;
   position: relative;
 }
 .magazine__cont-item--tex{
-  width: 300px;
+  max-width: 290px;
   color: #fff;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 18px;
+  padding: 15px 0;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 0;
+  right: 0;
 }
-.magazine__content-item--title{
-  font-size: 1.25rem;
-  margin-bottom: 2px;
-}
-
+/* Fashion */
 #fashion{
-  height: 500px;
-  background-image: url(https://placehold.jp/1200x500.png);
+  height: 520px;
+  background-image: url(https://placehold.jp/1920x480.png);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 30px;
-  margin-bottom: 100px;
   text-align: center;
-}
-.btn{
-  border: solid 1px black;
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 14px 36px;
-  margin-top: 30px;
+  padding-top: 60px;
+  margin-bottom: 80px;
 }
 
-#Catalog, #Antique{
-  background-color:ghostwhite;
+#catalog, #antique{
+  background-color: #f5f5f5;
   padding: 60px 0;
 }
 .section__cont{
@@ -103,11 +93,14 @@ a:hover {
   align-items: center;
 }
 .section__cont-item{
-  width: 47%;
+  width: 48%;
   text-align: center;
 }
-.section__cont-item--title{
+.section__cont .sec-title{
   margin-bottom: 40px;
+}
+.section__cont-item-img{
+  width: 100%;
 }
 .section__cont-item--tex{
   margin-bottom: 30px;
@@ -116,23 +109,18 @@ a:hover {
 .section__cont-item--tex:last-child{
   margin-bottom: 0px;
 }
-.change-item--2{
-  order: 2;
-}
-.change-item--1{
-  order: 1;
-}
 
 /* フッター */
 #footer{
-  background-color: black;
+  background-color: #333;
+  font-size: 0.750rem;
 }
 .footer__cont{
   display: flex;
-  color: white;
+  justify-content: space-between;
+  color: #fff;
   padding-top: 100px;
   padding-bottom: 100px;
-  justify-content: space-between;
 }
 .footer__cont-item{
   width: 33%;
@@ -140,10 +128,6 @@ a:hover {
 }
 .footer__cont-item:first-child{
   padding: 60px 0;
-}
-.footer__cont-item .logo-style{
-  padding: 0px;
-  text-align: left;
 }
 .footer__cont-item--title{
   font-size: 1rem;
@@ -155,12 +139,13 @@ a:hover {
   margin-right: 5px;
 }
 .footer__copyright{
-  background-color: white;
+  background-color: #fff;
   text-align: center;
   padding: 30px 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 896px) {
+  /* Magazine */
   .magazine__cont{
     flex-direction: column;
   }
@@ -170,12 +155,13 @@ a:hover {
   .magazine__cont-item:first-child{
     margin-bottom: 30px;
   }
-
+  /* Fashion */
   #fashion {
-    padding-top: 40px;
-    margin-bottom: 70px;
+    padding-top: 35px;
+    margin-bottom: 50px;
   }
-  #catalog, #antique{
+  /* Catalog & Antique */
+  #catalog, #Antique{
     padding: 30px 0;
   }
   .section__cont{
@@ -184,12 +170,10 @@ a:hover {
   .section__cont-item{
     width: 100%;
   }
-  #catalog .section__cont-item:nth-child(1) {
-    margin-bottom: 30px;
+  .section__cont-item:first-child  {
+    margin-bottom: 60px;
   }
-  #antique .section__cont-item:nth-child(2){
-    margin-bottom: 30px;
-  }
+  /* フッター */
   .footer__cont{
     flex-direction: column;
     padding-top: 30px;
@@ -201,7 +185,7 @@ a:hover {
   }
   .footer__cont-item:first-child{
     text-align: center;
-    padding: 2px 0;
+    padding: 0;
   }
 }
 
