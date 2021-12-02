@@ -12,13 +12,15 @@
 <body>
   <header id="header">
     <div class="warp inner">
-      <h1 class="logo"><a href="#">WED</a></h1>
+      <h1 class="logo">
+        <a href="index.html"><img src="https://placehold.jp/540x140.png" alt="Web Entertainment Design"></a>
+      </h1>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="#news">NEWS</a></li>
           <li class="nav__list-item"><a href="#about">ABOUT</a></li>
           <li class="nav__list-item"><a href="#business">BUSINESS</a></li>
-          <li class="nav__list-item"><a href="#company">CONMPANY</a></li>
+          <li class="nav__list-item"><a href="#company">COMPANY</a></li>
         </ul>
       </nav>
     </div>
@@ -27,84 +29,91 @@
 
   <main id="main">
     <div id="mainvisual">
-      <img class="mainvisual-img" src="https://placehold.jp/1500x1700.png">
+      <img class="mainvisual-img" src="https://placehold.jp/1920x1280.png" alt="">
     </div>
 
-    <section id="news">
-      <div class="warp">
-        <h2 class="section-title">
-          <p class="section-title-en">NEWS</p>
-          <p class="section-title-ja">ニュース</p>
-        </h2>
-        <ul class="news___list">
-          <li class="news___list-item">
-            <div class="news___list-item-date">
-              <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
-              <p class="news___list-item-date--label">NEWS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイト</p>
-          </li>
-          <li class="news___list-item">
-            <div class="news___list-item-date">
-              <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
-              <p class="news___list-item-date--label">PRESS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイト</p>
-          </li>
-          <li class="news___list-item">
-            <div class="news___list-item-date">
-              <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
-              <p class="news___list-item-date--label">NEWS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイト</p>
-          </li>
-        </ul>
-      </div>
+    <section id="news" class="warp">
+      <h2 class="section-title">
+        <p class="section-title-en">NEWS</p>
+        <p class="section-title-ja">ニュース</p>
+      </h2>
+
+      <ul class="news___list">
+        <li class="news___list-item">
+          <div class="news___list-item-date">
+            <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
+            <span class="news___list-item-date--label">NEWS</span>
+          </div>
+          <p>タイトルタイトルタイトルタイト</p>
+        </li>
+        <li class="news___list-item">
+          <div class="news___list-item-date">
+            <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
+            <span class="news___list-item-date--label">PRESS</span>
+          </div>
+          <p>タイトルタイトルタイトルタイト</p>
+        </li>
+        <li class="news___list-item">
+          <div class="news___list-item-date">
+            <time class="news___list-item-date--time" datetime="2020-01-01">2021.01.01</time>
+            <span class="news___list-item-date--label">NEWS</span>
+          </div>
+          <p>タイトルタイトルタイトルタイト</p>
+        </li>
+      </ul>
     </section>
 
-    <section id="about" class="inner">
+    <section id="about">
       <div class="about-img">
-        <img src="https://placehold.jp/500x400.png">
+        <img src="https://placehold.jp/1500x700.png" alt="">
       </div>
+
       <div class="about-tex">
         <h2 class="section-title">
-          <p class="section-title-en">ABOUT</p>
-          <p class="section-title-ja">私たちについて</p>
+          <span class="section-title-en">ABOUT</span>
+          <span class="section-title-ja">私たちについて</span>
         </h2>
-        <div>
-          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-        </div>
+        <p>
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+        </p>
+        <p>
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+        </p>
+        <p>
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+        </p>
       </div>
     </section>
 
-    <section id="business">
-      <div class="warp">
-        <h2 class="section-title">
-          <p class="section-title-en">BUSINESS</p>
-          <p class="section-title-ja">事業内容</p>
-        </h2>
-        <div class="business-cont">
-          <div class="business-cont--left">
-            <div class="business-cont--item">
-              <p class="business-cont--item-title">Web制作・マーケティング</p>
-              <img class="business-cont--item-img" src="https://placehold.jp/750x500.png">
-            </div>
-            <div class="business-cont--item">
-              <p class="business-cont--item-title">インターネットメディア事業</p>
-              <img class="business-cont--item-img" src="https://placehold.jp/750x500.png">
-            </div>
+    <section id="business" class="warp">
+      <h2 class="section-title">
+        <span class="section-title-en">BUSINESS</span>
+        <span class="section-title-ja">事業内容</span>
+      </h2>
+
+      <div class="business-cont">
+        <div class="business-cont--left">
+          <div class="business-cont--item">
+            <p class="business-cont--item-title">Web制作・マーケティング</p>
+            <img class="business-cont--item-img" src="https://placehold.jp/760x480.png" alt="">
           </div>
-          <div class="business-cont--right">
-            <div class="business-cont--item">
-              <p class="business-cont--item-title">プロモーション企画・制作</p>
-              <img class="business-cont--item-img" src="https://placehold.jp/750x500.png">
-            </div>
-            <div class="business-cont--item">
-              <p class="business-cont--item-title">ソーシャル企画・運営</p>
-              <img class="business-cont--item-img" src="https://placehold.jp/750x500.png">
-            </div>
+          <div class="business-cont--item">
+            <p class="business-cont--item-title">インターネットメディア事業</p>
+            <img class="business-cont--item-img" src="https://placehold.jp/760x480.png" alt="">
+          </div>
+        </div>
+
+        <div class="business-cont--right">
+          <div class="business-cont--item">
+            <p class="business-cont--item-title">プロモーション企画・制作</p>
+            <img class="business-cont--item-img" src="https://placehold.jp/760x480.png" alt="">
+          </div>
+          <div class="business-cont--item">
+            <p class="business-cont--item-title">ソーシャル企画・運営</p>
+            <img class="business-cont--item-img" src="https://placehold.jp/760x480.png" alt="">
           </div>
         </div>
       </div>
@@ -113,9 +122,10 @@
     <section id="company" class="warp">
       <div class="company-tex">
         <h2 class="section-title">
-          <p class="section-title-en">COMPANY</p>
-          <p class="section-title-ja">会社情報</p>
+          <span class="section-title-en">COMPANY</span>
+          <span class="section-title-ja">会社情報</span>
         </h2>
+
         <dl class="company-infolist">
           <dt class="company-infolist-term">会社名</dt>
           <dd class="company-infolist-explain">ウェブエンターテイメントデザイン株式会社</dd>
@@ -134,8 +144,9 @@
           <dd class="company-infolist-explain shift">ソーシャル企画・運営</dd>
         </dl>
       </div>
+
       <div class="company-img">
-        <img src="https://placehold.jp/500x400.png">
+        <img src="https://placehold.jp/1500x700.png" alt="">
       </div>
     </section>
   </main>
@@ -143,12 +154,15 @@
   <footer id="footer">
     <div class="warp">
       <div class="footer-cont">
-        <h1 class="logo">WED</h1>
+        <div class="logo">
+            <img img src="https://placehold.jp/540x140.png" alt="Web Entertainment Design">
+          </div>
         <div class="info">
-          <p>Web Entertainment Design Inc.
-            <br>West Building 3F
-            <br>9-99 Sakuragaokacho Shibuya-ku
-            <br>Tokyo, Japan 150-0031
+          <p>
+            Web Entertainment Design Inc.<br>
+            West Building 3F<br>
+            9-99 Sakuragaokacho Shibuya-ku<br>
+            Tokyo, Japan 150-0031
           </p>
           <p>T/99-9999-9999</p>
         </div>
