@@ -3,45 +3,53 @@
 
 body{
   font-family: 'Noto Serif JP', serif;
-  background-color: #f0e8c3;
-  color: black;
+  background-color: #e6e2d7;
+  color: #000;
 }
 
 /* Header */
 #header{
   width: 100%;
   height: 100vh;
-  padding: 70px;
-  margin-bottom: 200px;
-  background-image: url(https://placehold.jp/1900x1200.png);
+  padding: 60px 80px;
+  margin-bottom: 180px;
+  background-image: url(https://placehold.jp/1920x1280.png);
   background-size: cover;
-  background-position:  center top;
   background-repeat: no-repeat;
+  background-position:  center top;
+  writing-mode: vertical-rl;          /*ブラウザで反映されない場合もあるので下記ベンダープレフィックスを指定*/
+  -webkit-writing-mode: vertical-rl;  /* Chrome、Safari用 */
+  -moz-writing-mode: vertical-rl;     /* Firefox用 */
+  -ms-writing-mode: tb-rl;            /* IE用 */
   position: relative;
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
 }
 /* logo */
-.site-logo{
-  font-size: 2.5rem;
+.site-title{
+  line-height: 1px;
   margin-left: 60px;
+}
+.site-title a {
+  display: block;
+}
+.site-title img {
+  width: 40px;
 }
 /* nav */
 .nav__list-item {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 /* onlineStore */
 .onlineStore{
-  background-color: gray;
-  padding: 10px;
+  padding: 8px;
+  background: rgba(255,255,255,0.2);
   position: absolute;
-  left: 50px;
+  left: 40px;
   bottom: 30px;
 }
 .onlineStore-style{
   display: block;
-  border: solid 1px white;
-  padding: 20px 15px;
+  border: solid 1px #ccc;
+  padding: 30px 18px;
 }
 .onlineStore-style:hover{
   opacity: 0.7;
@@ -51,206 +59,238 @@ body{
 .wrap{
   width: 100%;
   max-width: 1000px;
-  padding: 0 25px;
   margin: 0 auto;
-}
-.section-title{
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  font-weight: normal;
-}
-#news ,#commodity-1, #commodity-2{
-  display: flex;
-  margin-bottom: 200px;
-}
-#news,#commodity-1{
-  flex-direction: row-reverse;
+  padding: 0 20px;
 }
 /* News */
-.news-title-en{
-  display: block;
-  font-size: 0.8rem;
-  margin-left: 15px;
+#news{
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: row-reverse;
 }
-.news-title-ja{
-  display: block;
-  font-size: 2rem;
-}
-.news__list{
+#news .section-title{
+  font-weight: normal;
+  line-height: 1;
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+}
+#news .section-title-en{
+  display: block;
+  font-size: 0.875rem;
+  margin-left: 15px;
+}
+#news .section-title-ja{
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.1em;
+}
+.section__list{
   padding: 80px 100px 0 0;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
 }
-.news__list-date{
-  border-right: solid 1px black;
-  font-size: 0.7rem;
-  padding: 20px 35px 20px 10px;
+.section__list-date{
+  border-right: solid 1px #000;
+  font-size: 0.75rem;
+  padding: 15px 30px 15px 5px;
 }
-.news__list-tex{
-  padding: 20px 0 20px 35px;
+.section__list-tex{
+  padding: 15px 0 15px 30px;
 }
-.news__list-tex:last-child{
-  border-left: solid 1px black;
+.section__list-tex:last-child{
+  border-left: solid 1px #000;
 }
 
-/* Commodity-1,2共通*/
-.commodity-title-ja{
+/* Products（共通） */
+.products {
+  display: flex;
+  margin-bottom: 180px;
+}
+.products .section-title {
+  font-weight: normal;
+  line-height: 1;
+}
+.products .section-title-ja{
   font-size: 2rem;
+  letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
-.commodity-title-en{
-  font-size: 0.8rem;
+.products .section-title-en{
+  font-size: 0.875rem;
 }
-.commodity-1__cont ,.commodity-2__cont{
+.section__cont{
   width: 65%;
   margin-top: 100px;
   position: relative;
 }
-.commodity-1__cont-tex ,.commodity-2__cont-tex{
-  writing-mode: sideways-rl;
-  width: 60%;
+.section__cont-tex {
+  width: 56%;
+  color: #fff;
   padding: 50px 0;
-  bottom: -20px;
   text-align: center;
   position: absolute;
-  color: white;
+  bottom: -20px;
 }
-/* #commodity-1 */
-#commodity-1 .section-title{
-  margin-left: 25px;
+/* Products-1 */
+#products-1 {
+  flex-direction: row-reverse;
 }
-.commodity-1__cont-tex {
-  left: -25px;
-  background: rgba(255, 255, 0, 0.5);
+#products-1 .section-title {
+  margin-left: 20px;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+}
+#products-1 .section__cont-tex {
+  left: -20px;
+  background: rgba(249, 233, 6, 0.6);
 }
 /* commodity-2 */
-#commodity-2 .section-title{
-  margin-right: 25px;
+#products-2 .section-title {
+  margin-right: 20px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
 }
-.commodity-2__cont-tex{
-  right: -25px;
-  background: rgba(255, 0, 0, 0.5);
+#products-2 .section__cont-tex {
+  right: -20px;
+  background: rgba(149, 42, 38, 0.6);
 }
 
-/* map */
+/* Map */
 .map-style{
   width: 100%;
   vertical-align: bottom;
 }
 
-/* footer */
+/* Footer */
 #footer{
-  color: white;
-  background-color: black;
-  padding: 70px;
+  background-color: #000;
+  color: #fff;
+  padding: 80px 80px 30px 30px;
 }
 .footer__cont{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin-bottom: 10px;
 }
-.footer__cont-left ,.footer__cont-right{
+.footer__cont-left ,
+.footer__cont-right{
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl
 }
-.footer__cont-right-domicile,.footer__cont-right-tele{
-  line-height: 1;
+.footer__cont-right-logo{
+  width: 40px;
+  margin-left: 60px;
 }
-.footer__cont-right-list{
+.footer__cont-right-info{
+  line-height: 2;
+}
+.footer__cont-right-menuList{
   font-size: 1rem;
   margin-right: 60px;
 }
-.footer__cont-right-list-item{
-  margin-left: 30px;
+.footer__cont-right-menuList-item{
+  margin-left: 25px;
 }
 .copyright{
-  font-size: 0.5rem;
+  font-size: 0.625rem;
   text-align: center;
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
   .wrap{
     max-width: 100%;
   }
-  /* header */
+  /* Header */
   #header{
-    background-image: url(https://placehold.jp/650x700.png);
+    background-image: url(https://placehold.jp/640x760.png);
     padding: 20px;
     margin-bottom: 80px;
   }
   .onlineStore{
-    left: 25px;
-    bottom: 25px;
+    left: 20px;
+    bottom: 20px;
   }
-  /* main 共通 */
-  #news, #commodity-1, #commodity-2{
-    margin-bottom: 100px;
+
+  /* News */
+  #news{
+    margin-bottom: 80px;
   }
-  /* news */
-  .news-title-ja{
-    font-size: 1.7rem;
+  #news .section-title-ja{
+    font-size: 1.75rem;
   }
-  .news__list{
+  #news .section__list{
     padding: 20px 30px 0 0;
   }
-  .news__list-date{
-    padding: 15px 10px 15px 5px;
-  }
-  .news__list-tex{
-    padding: 15px 0 15px 10px;
-  }
-  .news__list-tex:nth-of-type(3) {
-    border-left: solid 1px #000;
+  .section__list-date{
+    padding: 15px 12px 15px 5px;
   }
   /* ４番目以降非表示 */
-  .news__list-date:nth-of-type(n + 4){
+  .section__list-date:nth-of-type(n + 4){
     display: none;
   }
-  .news__list-tex:nth-of-type(n + 4) {
+  .section__list-tex{
+    padding: 15px 0 15px 12px;
+  }
+  .section__list-tex:nth-of-type(3) {
+    border-left: solid 1px #000;
+  }
+  .section__list-tex:nth-of-type(n + 4) {
     display: none;
   }
 
-  /* commodity-1,2共通 */
-  .commodity-title-ja{
-    font-size: 1.7rem;
+  /* Products-1,2共通 */
+  .products {
+    margin-bottom: 100px;
+  }
+  .products .section-title-ja{
+    font-size: 1.5rem;
   }
   /* 英語非表示 */
-  .commodity-title-en {
+  .products .section-title-en {
     display: none;
   }
-  .commodity-1__cont ,.commodity-2__cont{
+  .products .section__cont{
     width: 90%;
-    margin-top: 80px;
+    margin-top: 70px;
   }
-  .commodity-1__cont-tex ,.commodity-2__cont-tex{
-    width: 65%;
-    font-size: 0.8rem;
+  .products .section__cont-tex{
+    width: 64%;
+    font-size: 0.875rem;
     padding: 30px 0;
   }
-  /* commodity-1 */
-  #commodity-1 .section-title{
-    margin-left: 15px;
+  /* Products-1 */
+  #products-1 .section-title{
+    margin-left: 10px;
   }
-  /* Commodity-2 */
-  #commodity-2 .section-title{
-    margin-right: 15px;
+  /* Products-2 */
+  #products-2 .section-title{
+    margin-right: 10px;
   }
 
   /* Footer */
   #footer {
-    padding: 40px 20px;
+    padding: 40px 20px 30px 20px;
   }
-  #footer .site-logo {
-    margin-left: 30px;
+  .footer__cont-right-logo{
+    margin-left: 25px;
   }
-  .footer__cont-right-list {
-    font-size: 0.8rem;
+  .footer__cont-right-menuList {
+    font-size: 0.875rem;
     margin-right: 25px;
   }
-  .footer__cont-right-list-item{
-    margin-left: 15px;
+  .footer__cont-right-menuList-item{
+    margin-left: 10px;
   }
 }
