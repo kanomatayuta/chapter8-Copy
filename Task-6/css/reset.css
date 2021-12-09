@@ -1,0 +1,25 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border-style: none;
+}
+li{
+  list-style: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}

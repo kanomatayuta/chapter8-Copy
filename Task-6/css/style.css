@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* 命名規則　BEM */
+
+body{
+  font-family: 'Noto Serif JP', serif;
+  background-color: #f0e8c3;
+  color: black;
+}
+
+/* Header */
+#header{
+  width: 100%;
+  height: 100vh;
+  padding: 70px;
+  margin-bottom: 200px;
+  background-image: url(https://placehold.jp/1900x1200.png);
+  background-size: cover;
+  background-position:  center top;
+  background-repeat: no-repeat;
+  position: relative;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+}
+/* logo */
+.site-logo{
+  font-size: 2.5rem;
+  margin-left: 60px;
+}
+/* nav */
+.nav__list-item {
+  margin-left: 30px;
+}
+/* onlineStore */
+.onlineStore{
+  background-color: gray;
+  padding: 10px;
+  position: absolute;
+  left: 50px;
+  bottom: 30px;
+}
+.onlineStore-style{
+  display: block;
+  border: solid 1px white;
+  padding: 20px 15px;
+}
+.onlineStore-style:hover{
+  opacity: 0.7;
+}
+
+/* Main 共通*/
+.wrap{
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.section-title{
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  font-weight: normal;
+}
+#news ,#commodity-1, #commodity-2{
+  display: flex;
+  margin-bottom: 200px;
+}
+#news,#commodity-1{
+  flex-direction: row-reverse;
+}
+/* News */
+.news-title-en{
+  display: block;
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+.news-title-ja{
+  display: block;
+  font-size: 2rem;
+}
+.news__list{
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  padding: 80px 100px 0 0;
+}
+.news__list-date{
+  border-right: solid 1px black;
+  font-size: 0.7rem;
+  padding: 20px 35px 20px 10px;
+}
+.news__list-tex{
+  padding: 20px 0 20px 35px;
+}
+.news__list-tex:last-child{
+  border-left: solid 1px black;
+}
+
+/* Commodity-1,2共通*/
+.commodity-title-ja{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.commodity-title-en{
+  font-size: 0.8rem;
+}
+.commodity-1__cont ,.commodity-2__cont{
+  width: 65%;
+  margin-top: 100px;
+  position: relative;
+}
+.commodity-1__cont-tex ,.commodity-2__cont-tex{
+  writing-mode: sideways-rl;
+  width: 60%;
+  padding: 50px 0;
+  bottom: -20px;
+  text-align: center;
+  position: absolute;
+  color: white;
+}
+/* #commodity-1 */
+#commodity-1 .section-title{
+  margin-left: 25px;
+}
+.commodity-1__cont-tex {
+  left: -25px;
+  background: rgba(255, 255, 0, 0.5);
+}
+/* commodity-2 */
+#commodity-2 .section-title{
+  margin-right: 25px;
+}
+.commodity-2__cont-tex{
+  right: -25px;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+/* map */
+.map-style{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* footer */
+#footer{
+  color: white;
+  background-color: black;
+  padding: 70px;
+}
+.footer__cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.footer__cont-left ,.footer__cont-right{
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+}
+.footer__cont-right-domicile,.footer__cont-right-tele{
+  line-height: 1;
+}
+.footer__cont-right-list{
+  font-size: 1rem;
+  margin-right: 60px;
+}
+.footer__cont-right-list-item{
+  margin-left: 30px;
+}
+.copyright{
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+  .wrap{
+    max-width: 100%;
+  }
+  /* header */
+  #header{
+    background-image: url(https://placehold.jp/650x700.png);
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+  .onlineStore{
+    left: 25px;
+    bottom: 25px;
+  }
+  /* main 共通 */
+  #news, #commodity-1, #commodity-2{
+    margin-bottom: 100px;
+  }
+  /* news */
+  .news-title-ja{
+    font-size: 1.7rem;
+  }
+  .news__list{
+    padding: 20px 30px 0 0;
+  }
+  .news__list-date{
+    padding: 15px 10px 15px 5px;
+  }
+  .news__list-tex{
+    padding: 15px 0 15px 10px;
+  }
+  .news__list-tex:nth-of-type(3) {
+    border-left: solid 1px #000;
+  }
+  /* ４番目以降非表示 */
+  .news__list-date:nth-of-type(n + 4){
+    display: none;
+  }
+  .news__list-tex:nth-of-type(n + 4) {
+    display: none;
+  }
+
+  /* commodity-1,2共通 */
+  .commodity-title-ja{
+    font-size: 1.7rem;
+  }
+  /* 英語非表示 */
+  .commodity-title-en {
+    display: none;
+  }
+  .commodity-1__cont ,.commodity-2__cont{
+    width: 90%;
+    margin-top: 80px;
+  }
+  .commodity-1__cont-tex ,.commodity-2__cont-tex{
+    width: 65%;
+    font-size: 0.8rem;
+    padding: 30px 0;
+  }
+  /* commodity-1 */
+  #commodity-1 .section-title{
+    margin-left: 15px;
+  }
+  /* Commodity-2 */
+  #commodity-2 .section-title{
+    margin-right: 15px;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 40px 20px;
+  }
+  #footer .site-logo {
+    margin-left: 30px;
+  }
+  .footer__cont-right-list {
+    font-size: 0.8rem;
+    margin-right: 25px;
+  }
+  .footer__cont-right-list-item{
+    margin-left: 15px;
+  }
+}
